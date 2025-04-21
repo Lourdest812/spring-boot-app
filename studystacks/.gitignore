@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .metadata/
+/studystacks/bin/
 
 ### STS ###
 .apt_generated
