@@ -1,4 +1,4 @@
-package com.lourdes.studystacks.studystacks;
+package com.lourdes.studystacks.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +15,7 @@ public class Controller {
     {
         String str
             = "<html><body><font color=\"blue\">"
-              + "<h1>This is my first Spring projetc in a while, let's experiment with it!</h1>"
+              + "<h1>This is my first Spring project in a while, let's experiment with it!</h1>"
               + "</font></body></html>";
         return str;
     }
