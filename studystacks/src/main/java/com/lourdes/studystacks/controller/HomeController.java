@@ -4,14 +4,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+;
 
 @RestController
-public class Controller {
+public class HomeController {
   
     // One syntax to implement a
     // GET method
-    @GetMapping("/")
-    public String home()
+    @GetMapping("/test")
+    public String test()
     {
         String str
             = "<html><body><font color=\"blue\">"
@@ -37,4 +38,9 @@ public class Controller {
               + "</h2></font></body></html>";
         return str2;
     }
+    @GetMapping("/")
+        public String home() {
+            return "This is your home, hello! :D"; // Refers to home.html in the templates folder
+        }
+
 }
